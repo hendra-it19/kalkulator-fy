@@ -32,7 +32,7 @@ const Calculator = () => {
             <button
               key={item}
               onClick={() => item === "=" ? calculateResult() : handleClick(item)}
-              className={`p-4 text-xl font-semibold rounded-lg ${
+              className={`py-4 px-6 text-2xl font-semibold rounded-lg ${
                 item === "=" ? "bg-blue-500" : "bg-gray-700"
               } hover:bg-opacity-75 text-white`}
             >
@@ -41,12 +41,14 @@ const Calculator = () => {
           ))}
           <button
             onClick={clearInput}
-            className="col-span-4 p-4 bg-red-500 hover:bg-opacity-75 text-white text-xl font-semibold rounded-lg"
+            className="col-span-4 p-2 bg-red-500 hover:bg-opacity-75 text-white text-lg font-semibold rounded-lg"
           >
             Clear
           </button>
         </div>
       </div>
+
+      <small className="text-white absolute bottom-2">CB @hendra_it19 </small>
     </div>
   );
 };
