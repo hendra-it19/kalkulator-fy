@@ -21,7 +21,7 @@ const Calculator = () => {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-900">
-      <div className="bg-gray-800 p-8 rounded-lg shadow-lg max-w-xs">
+      <div className="bg-gray-800 p-8 rounded-lg shadow-lg max-w-md">
         <div className="mb-4 text-right text-white text-3xl">{input || "0"}</div>
         <div className="grid grid-cols-4 gap-2">
           {["7", "8", "9", "/",
