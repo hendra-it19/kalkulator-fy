@@ -9,10 +9,14 @@ const Calculator = () => {
   };
 
   const calculateResult = () => {
-    try {
-      setInput(eval(input).toString()); // Gunakan eval dengan hati-hati!
-    } catch {
-      setInput("Error");
+    if(input == 100){
+      setInput("Love You❤️");
+    }else{
+      try {
+        setInput(eval(input).toString()); // Gunakan eval dengan hati-hati!
+      } catch {
+        setInput("Error");
+      }
     }
   };
 
