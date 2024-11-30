@@ -31,7 +31,10 @@ const Calculator = () => {
       try {
         setInput(hasil);
       } catch {
-       setInput("Error");
+        setInput("Error");
+        setTimeout(()=>{
+          setInput("0");
+        },500);
       }
     }
   };
