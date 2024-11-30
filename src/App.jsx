@@ -9,12 +9,11 @@ const Calculator = () => {
   };
 
   const calculateResult = () => {
-    // try {
-    //   setInput(eval(input).toString()); // Gunakan eval dengan hati-hati!
-    // } catch {
-    //   setInput("Error");
-    // }
-    setInput("Miss You ❤️")
+    try {
+      setInput(eval(input).toString()); // Gunakan eval dengan hati-hati!
+    } catch {
+      setInput("Error");
+    }
   };
 
   const clearInput = () => setInput("");
