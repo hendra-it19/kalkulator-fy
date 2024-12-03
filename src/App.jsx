@@ -11,22 +11,22 @@ const Calculator = () => {
   const calculateResult = () => {
     let hasil =  eval(input).toString();
     if(hasil == 10){
-      setInput("10");
-      // setTimeout(()=>{
-      //   setInput("Gitar ku petik");
-      // },400);
-      // setTimeout(()=>{
-      //   setInput("Bass ku betot");
-      // },2000);
-      // setTimeout(()=>{
-      //   setInput("Hai nona cantik");
-      // },4000);
-      //       setTimeout(()=>{
-      //   setInput("Maukah ku entot");
-      // },6000);
-      // setTimeout(()=>{
-      //   setInput("10");
-      // },8000);
+      // setInput("10");
+      setTimeout(()=>{
+        setInput("tu");
+      },400);
+      setTimeout(()=>{
+        setInput("wa");
+      },2000);
+      setTimeout(()=>{
+        setInput("ga");
+      },4000);
+            setTimeout(()=>{
+        setInput("Lop Yu❤️");
+      },6000);
+      setTimeout(()=>{
+        setInput("10");
+      },8000);
     }else{
       try {
         setInput(hasil);
